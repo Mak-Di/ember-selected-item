@@ -1,5 +1,3 @@
 <h1>Index page</h1>
-{{#each model as |item|}}
-  <div>{{item.name}}</div>
-{{/each}}
+{{#selected-item items=model selectedItem=selection}}{{/selected-item}}
 {{outlet}}

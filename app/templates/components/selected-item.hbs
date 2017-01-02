@@ -1,0 +1,4 @@
+{{#each items as |item|}}
+  <div class="list-item {{if item.isSelected 'selected'}}" {{action 'click' item}}>{{item.name}}</div>
+{{/each}}
+{{yield}}
